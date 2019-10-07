@@ -5,9 +5,14 @@ def badge_maker(name)
 end
 
 def batch_badge_creator(attendees)
-  attendees.each do |name|
-    return badge_maker(name)
+  badge_message_arr = []
+  i = 0
+  
+  while i < attendees.length 
+    value = badge_maker(attendees[i])
+    i += 1
   end
+  return badge_message_arr
 end
 
 def assign_rooms

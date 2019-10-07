@@ -10,6 +10,7 @@ def batch_badge_creator(attendees)
   
   while i < attendees.length 
     value = badge_maker(attendees[i])
+    badge_message_arr << value
     i += 1
   end
   return badge_message_arr

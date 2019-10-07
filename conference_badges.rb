@@ -10,7 +10,6 @@ def batch_badge_creator(attendees)
   attendees.each do |name| 
     value = badge_maker(name)
     badge_message_arr << value
-    i += 1
   end
   return badge_message_arr
 end

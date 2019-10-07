@@ -6,10 +6,9 @@ end
 
 def batch_badge_creator(attendees)
   badge_message_arr = []
-  i = 0
   
-  while i < attendees.length 
-    value = badge_maker(attendees[i])
+  attendees.each do |name| 
+    value = badge_maker(name)
     badge_message_arr << value
     i += 1
   end
